@@ -7,9 +7,13 @@ public class Calculator {
         System.out.println(result);
     }
 
+    public  static int func1(int x) {
+        return x;
+    }
+
     public static void main(String[] args) {
-        Calculator.plus(100, 500);
-        Calculator.plus(4, 2);
-        Calculator.plus(3, 5);
+        Calculator.plus(1, 2);
+        Calculator.plus(10, 11);
+        int result3 = Calculator.func1(100);
     }
 }
