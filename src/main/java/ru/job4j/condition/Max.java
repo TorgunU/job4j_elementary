@@ -5,10 +5,4 @@ public class Max {
         int result = left > right ? left : right;
         return result;
     }
-
-    public static int summation(int first, int second) {
-        int result = first + second;
-        return result;
-    }
-
 }
