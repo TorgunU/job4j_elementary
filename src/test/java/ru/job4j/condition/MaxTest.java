@@ -15,6 +15,27 @@ class MaxTest {
     }
 
     @Test
+    void whenMax1432Then4() {
+        int first = 1;
+        int second = 4;
+        int third = 3;
+        int fourth = 2;
+        int expected = 4;
+        int out = Max.max(first, second, third, fourth);
+        assertThat(out).isEqualTo(expected);
+    }
+
+    @Test
+    void whenMax623Then4() {
+        int first = 6;
+        int second = 2;
+        int third = 3;
+        int expected = 6;
+        int out = Max.max(first, second, third);
+        assertThat(out).isEqualTo(expected);
+    }
+
+    @Test
     void whenMax5To1Then5() {
         int left = 5;
         int right = 1;
