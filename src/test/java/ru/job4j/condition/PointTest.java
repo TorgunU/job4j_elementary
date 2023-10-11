@@ -41,8 +41,8 @@ class PointTest {
     }
 
     @Test
-    void when123To456Then7Dot24() {
-        double expected = 7.24;
+    void when123To456Then5Dot196() {
+        double expected = 5.196;
         Point point1 = new Point(1, 2, 3);
         Point point2 = new Point(4, 5, 6);
         double out = point1.distance3d(point2);
@@ -54,6 +54,15 @@ class PointTest {
         double expected = 3.0;
         Point point1 = new Point(1, 1, 1);
         Point point2 = new Point(4, 1, 1);
+        double out = point1.distance3d(point2);
+        assertThat(out).isEqualTo(expected, withPrecision(0.01));
+    }
+
+    @Test
+    void when592To817Then9Dot89() {
+        double expected = 9.89;
+        Point point1 = new Point(5, 9, 2);
+        Point point2 = new Point(8, 1, 7);
         double out = point1.distance3d(point2);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
